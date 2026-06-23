@@ -408,7 +408,7 @@
                                     <option value="unsure">Not sure</option>
                                 </select>
                             </div>
-                            <button type="submit" id="submit-btn" class="btn-primary w-full text-center text-sm">Start Your Workflow Review</button>
+                            <button type="button" id="submit-btn" class="btn-primary w-full text-center text-sm">Start Your Workflow Review</button>
                         </form>
                     </div>
 
@@ -494,8 +494,10 @@
         iframe.style.display = 'none';
         document.body.appendChild(iframe);
 
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Wire submit button
+        submitBtn.addEventListener('click', submitForm);
+
+        function submitForm() {
             alertError.style.display = 'none';
 
             // Validate required fields
@@ -552,7 +554,7 @@
                 thankYou.classList.add('show');
                 submitBtn.disabled = false;
             }, 800);
-        });
+        }
     })();
     </script>
 </body>
