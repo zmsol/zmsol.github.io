@@ -37,7 +37,7 @@
         @font-face { font-family: 'Space Grotesk Fallback'; src: local('Arial Bold'); size-adjust: 110%; }
         :root { --zm-black: #000000; --zm-white: #FFFFFF; --zm-off-white: #F4F4F4; --zm-blue: #0A1128; --zm-orange: #CC3300; --zm-border: #E5E7EB; }
         body { background-color: var(--zm-white); color: var(--zm-black); font-family: 'Inter', 'Inter Fallback', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-        h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif; text-transform: uppercase; letter-spacing: 0; line-height: 1.1; overflow-wrap: break-word; }
+        h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.05; }
         *, *::before, *::after { border-radius: 0 !important; box-sizing: border-box; margin: 0; padding: 0; }
         .circle { border-radius: 50% !important; }
         html { scroll-behavior: smooth; }
@@ -74,8 +74,8 @@
         .thank-you.show { display: flex; }
 
         /* Improved mobile text sizing */
-        .hero-headline { font-size: clamp(2rem, 8vw, 5.5rem); line-height: 1; overflow-wrap: break-word; }
-        .section-headline { font-size: clamp(1.8rem, 5vw, 3rem); }
+        .hero-headline { font-size: clamp(1.75rem, 6vw, 5.5rem); line-height: 1; }
+        .section-headline { font-size: clamp(1.5rem, 4.5vw, 3rem); }
         .stat-lg { font-size: clamp(2rem, 6vw, 3.5rem); }
     </style>
 </head>
@@ -118,8 +118,7 @@
                     <span class="text-[var(--zm-orange)] text-xs font-bold uppercase tracking-[0.15em]">Systems Architecture</span>
                 </div>
                 <h1 class="hero-headline font-black text-white mb-5">
-                    Faster workflows for professional teams.
-                    <span class="text-[var(--zm-orange)] block mt-1">We build them.</span>
+                    Faster workflows for <span class="text-[var(--zm-orange)]">professional teams.</span>
                 </h1>
                 <p class="text-base md:text-xl text-white/60 mb-8 max-w-xl leading-relaxed">
                     Z&amp;M Solutions builds operational systems that make your team faster. We find the tasks that slow you down and deploy the right tool, system, or process to remove them.
