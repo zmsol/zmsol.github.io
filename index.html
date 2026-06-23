@@ -37,7 +37,7 @@
         @font-face { font-family: 'Space Grotesk Fallback'; src: local('Arial Bold'); size-adjust: 110%; }
         :root { --zm-black: #000000; --zm-white: #FFFFFF; --zm-off-white: #F4F4F4; --zm-blue: #0A1128; --zm-orange: #CC3300; --zm-border: #E5E7EB; }
         body { background-color: var(--zm-white); color: var(--zm-black); font-family: 'Inter', 'Inter Fallback', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-        h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif; text-transform: uppercase; letter-spacing: -0.03em; line-height: 1.05; }
+        h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif; text-transform: uppercase; letter-spacing: 0; line-height: 1.1; overflow-wrap: break-word; }
         *, *::before, *::after { border-radius: 0 !important; box-sizing: border-box; margin: 0; padding: 0; }
         .circle { border-radius: 50% !important; }
         html { scroll-behavior: smooth; }
@@ -74,7 +74,7 @@
         .thank-you.show { display: flex; }
 
         /* Improved mobile text sizing */
-        .hero-headline { font-size: clamp(2.5rem, 10vw, 5.5rem); line-height: 0.9; }
+        .hero-headline { font-size: clamp(2rem, 8vw, 5.5rem); line-height: 1; overflow-wrap: break-word; }
         .section-headline { font-size: clamp(1.8rem, 5vw, 3rem); }
         .stat-lg { font-size: clamp(2rem, 6vw, 3.5rem); }
     </style>
@@ -489,10 +489,17 @@
         var thankYou = document.getElementById('thank-you');
         var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyumqN_EiOIrN5PDcjLaLYVRxXKCS9ctsaYqlDYfAWqHZC1tMiODyKIpjinaXZ38-gpQA/exec';
 
+        // Create hidden iframe for form submission
+        var iframe = document.createElement('iframe');
+        iframe.name = 'hidden-form-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             alertError.style.display = 'none';
 
+            // Validate required fields
             var required = form.querySelectorAll('[required]');
             for (var i = 0; i < required.length; i++) {
                 if (!required[i].value.trim()) {
@@ -523,30 +530,29 @@
                 submitted_at: new Date().toISOString()
             };
 
-            if (!APPS_SCRIPT_URL) {
-                console.log('LEAD:', data);
-                formContainer.style.display = 'none';
-                thankYou.classList.add('show');
-                return;
-            }
+            // Build hidden form to POST to Apps Script via iframe (bypasses CORS)
+            var hiddenForm = document.createElement('form');
+            hiddenForm.method = 'POST';
+            hiddenForm.action = APPS_SCRIPT_URL;
+            hiddenForm.target = 'hidden-form-iframe';
+            hiddenForm.enctype = 'text/plain';
 
-            fetch(APPS_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'text/plain' },
-                body: JSON.stringify(data)
-            })
-            .then(function() {
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'json';
+            input.value = JSON.stringify(data);
+            hiddenForm.appendChild(input);
+
+            document.body.appendChild(hiddenForm);
+            hiddenForm.submit();
+            document.body.removeChild(hiddenForm);
+
+            // Show thank you after short delay
+            setTimeout(function() {
                 formContainer.style.display = 'none';
                 thankYou.classList.add('show');
-            })
-            .catch(function(err) {
-                console.error('Form error:', err);
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Start Your Workflow Review';
-                alertError.textContent = 'Something went wrong. Please try again.';
-                alertError.style.display = 'block';
-            });
+            }, 800);
         });
     })();
     </script>
