@@ -1,0 +1,19 @@
+name: Form Handler
+on:
+  repository_dispatch:
+    types: [lead_submission]
+jobs:
+  save-lead:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Append lead to data file
+        run: |
+          mkdir -p data
+          echo '${{ github.event.client_payload }}' >> data/leads.ndjson
+      - name: Commit and push
+        run: |
+          git config user.name "Z&M Bot"
+          git config user.email "bot@zmsolutions.com"
+          git add data/leads.ndjson
+          git diff --quiet && git diff --staged --quiet || (git commit -m "New lead submission" && git push)
