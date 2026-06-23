@@ -514,23 +514,18 @@
                 return;
             }
 
-            // Send to Google Apps Script
+            // Send to Google Apps Script (text/plain to avoid CORS preflight)
             fetch(APPS_SCRIPT_URL, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain' },
                 body: JSON.stringify(data)
             })
-            .then(function(r) {
-                if (!r.ok) throw new Error('Server returned ' + r.status);
-                return r.json();
-            })
-            .then(function(r) {
-                if (r.success) {
-                    form.style.display = 'none';
-                    successMsg.style.display = 'block';
-                } else {
-                    throw new Error(r.error || 'Unknown error');
-                }
+            .then(function() {
+                // no-cors mode returns opaque response — can't read body.
+                // If we got here without throwing, the request was sent.
+                form.style.display = 'none';
+                successMsg.style.display = 'block';
             })
             .catch(function(err) {
                 console.error('Form submission failed:', err);
