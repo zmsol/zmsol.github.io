@@ -3,473 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO / AEO (AI Engine Optimization) -->
-    <title>Z&M SOLUTIONS | AI Strategy & System Architecture</title>
-    <meta name="description" content="Strategic AI infrastructure and workflow automation blueprints. We eliminate manual grunt work for growing teams through systems architecture.">
-    <meta name="keywords" content="AI Strategy, Workflow Automation, System Architecture, Business Efficiency, AI Consulting">
-    <meta name="author" content="Z&M Solutions">
+    <title>Z&M Solutions | Faster Workflows for Professional Teams</title>
+    <meta name="description" content="Z&M Solutions builds operational systems that make professional teams faster. Defense contractors, law firms, and SMB leaders trust us to eliminate the work that should not be manual.">
+    <meta name="keywords" content="operational systems, workflow optimization, professional team productivity, compliance intelligence, workflow automation, systems architecture">
     <meta name="robots" content="index, follow">
-    <meta name="ai-content" content="index">
-    <link rel="canonical" href="https://zmsolutions.github.io/">
+    <link rel="canonical" href="https://www.zmsolutions.com">
 
-    <!-- Social Media Metadata (Open Graph) -->
-    <meta property="og:title" content="Z&M SOLUTIONS | AI STRATEGY">
-    <meta property="og:description" content="We design the systems that eliminate manual bottlenecks. High-utility AI blueprints.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23CC3300'/%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='rgba(255,255,255,0.3)' stroke-width='2'/%3E%3C/svg%3E">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://zmsolutions.github.io/logo-preview.png">
-    <meta property="og:url" content="https://zmsolutions.github.io/">
+    <meta property="og:url" content="https://www.zmsolutions.com">
+    <meta property="og:title" content="Z&M Solutions | Faster Workflows for Professional Teams">
+    <meta property="og:description" content="We build the systems that make your team faster.">
+    <meta property="og:site_name" content="Z&M Solutions LLC">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.zmsolutions.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Z&M Solutions — Systems That Make Your Team Faster">
+    <meta name="twitter:description" content="We build the systems that make your team faster.">
+    <meta name="twitter:image" content="https://www.zmsolutions.com/og-image.png">
 
-    <!-- Security Hygiene -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="no-referrer">
-    
-    <!-- JSON-LD Structured Data (AEO) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Z&M Solutions",
-      "description": "AI Strategy and System Architecture for workflow automation and operational efficiency.",
-      "url": "https://zmsolutions.github.io/",
-      "email": "zmsolutions@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US"
-      },
-      "serviceType": ["AI Strategy", "Workflow Automation", "System Architecture"],
-      "offers": {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Strategic AI Diagnostic"
-        }
-      }
-    }
-    </script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --black: #000000;
-            --white: #FFFFFF;
-            --off-white: #F4F4F4;
-            --script-bg: #F9F9F9;
-            --accent-red: #FF0000;
-            --border-thick: 4px solid #000000;
-            --border-thin: 1px solid #000000;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            border-radius: 0 !important;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--off-white);
-            color: var(--black);
-            line-height: 1.5;
-            padding: 0;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        h1, h2, h3, .badge {
-            font-family: 'Space Grotesk', sans-serif;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .logo-wrapper {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 0;
-            background: transparent;
-            margin-bottom: 30px;
-        }
-
-        .logo-text {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: var(--black);
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            line-height: 1;
-        }
-
-        .logo-dot {
-            width: 24px;
-            height: 24px;
-            background-color: var(--accent-red);
-            border-radius: 50% !important; 
-            margin-left: 12px;
-        }
-
-        .accent-bar {
-            height: 8px;
-            background: var(--black);
-            width: 100px;
-            margin: 15px 0 30px 0;
-        }
-
-        header {
-            border-bottom: var(--border-thick);
-            background: var(--white);
-            padding: 80px 0;
-        }
-
-        .hero-sub {
-            font-size: 1.5rem;
-            max-width: 750px;
-            font-weight: 500;
-            line-height: 1.2;
-            margin-top: 10px;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            margin-top: 40px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: var(--black);
-            color: var(--white);
-            padding: 6px 12px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .badge.red {
-            background: var(--accent-red);
-        }
-
-        .script-box {
-            background: var(--script-bg);
-            border: 1px solid #E5E7EB;
-            border-left: 4px solid var(--black);
-            padding: 40px;
-            margin: 40px 0;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .utility-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-        }
-
-        .utility-table th {
-            background: var(--black);
-            color: var(--white);
-            text-align: left;
-            padding: 15px;
-            font-family: 'Space Grotesk', sans-serif;
-            text-transform: uppercase;
-        }
-
-        .utility-table td {
-            padding: 20px 15px;
-            border-bottom: 1px solid #D1D5DB;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            margin: 60px 0;
-        }
-
-        .card {
-            background: var(--white);
-            border: var(--border-thin);
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            transition: border-color 0.2s;
-        }
-        
-        .card:hover {
-            border-color: var(--accent-red);
-        }
-
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--black);
-            color: var(--white);
-            text-decoration: none;
-            padding: 20px 40px;
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            border: var(--border-thick);
-            transition: all 0.2s ease;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        .btn:hover { 
-            background: var(--accent-red);
-            border-color: var(--accent-red);
-        }
-
-        /* FORM STYLES */
-        .form-container {
-            background: var(--white);
-            border: var(--border-thick);
-            padding: 60px 40px;
-            margin: 80px 0;
-        }
-
-        .form-group {
-            margin-bottom: 30px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            font-family: 'Space Grotesk', sans-serif;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-        }
-
-        .form-group input, 
-        .form-group textarea, 
-        .form-group select {
-            border: var(--border-thin);
-            padding: 15px;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            background: var(--off-white);
-        }
-
-        .form-group input:focus, 
-        .form-group textarea:focus {
-            outline: none;
-            border: 2px solid var(--black);
-            background: var(--white);
-        }
-
-        .service-list {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .service-list li {
-            padding-left: 20px;
-            position: relative;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-
-        .service-list li::before {
-            content: "—";
-            position: absolute;
-            left: 0;
-            color: var(--accent-red);
-            font-weight: bold;
-        }
-
-        footer {
-            border-top: var(--border-thick);
-            background: var(--white);
-            padding: 60px 0;
-            text-align: center;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        @media (max-width: 768px) {
-            .logo-text { font-size: 1.6rem; }
-            .section-title { font-size: 2rem; }
-            header { padding: 40px 0; }
-            .form-container { padding: 40px 20px; }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@500;700;900&display=swap');
+        :root { --zm-black: #000000; --zm-white: #FFFFFF; --zm-off-white: #F4F4F4; --zm-blue: #0A1128; --zm-orange: #CC3300; --zm-border: #E5E7EB; }
+        body { background-color: var(--zm-white); color: var(--zm-black); font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; letter-spacing: -0.03em; line-height: 0.95; }
+        * { border-radius: 0 !important; box-sizing: border-box; }
+        .circle { border-radius: 50% !important; }
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition-duration: 0s !important; } }
+        .btn-primary { background: var(--zm-orange); color: var(--zm-white); padding: 1.125rem 2.25rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-transform: uppercase; border: none; display: inline-block; transition: 0.2s all; cursor: pointer; font-size: 0.85rem; letter-spacing: 0.04em; }
+        .btn-primary:hover { background: var(--zm-black); transform: translateY(-2px); }
+        .btn-outline { background: transparent; color: var(--zm-white); padding: 1.125rem 2.25rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-transform: uppercase; border: 2px solid rgba(255,255,255,0.3); display: inline-block; transition: 0.2s all; cursor: pointer; font-size: 0.85rem; letter-spacing: 0.04em; }
+        .btn-outline:hover { border-color: var(--zm-orange); color: var(--zm-orange); }
+        .btn-outline-dark { background: transparent; color: var(--zm-blue); padding: 1.125rem 2.25rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-transform: uppercase; border: 2px solid var(--zm-blue); display: inline-block; transition: 0.2s all; cursor: pointer; font-size: 0.85rem; letter-spacing: 0.04em; }
+        .btn-outline-dark:hover { background: var(--zm-blue); color: var(--zm-white); }
+        .form-input { width: 100%; padding: 14px 16px; border: 2px solid var(--zm-border); background: var(--zm-white); font-family: 'Inter', sans-serif; font-size: 1rem; color: var(--zm-black); transition: border-color 0.15s; }
+        .form-input:focus { outline: none; border-color: var(--zm-orange); }
+        .form-input::placeholder { color: #aaa; }
+        .form-select { width: 100%; padding: 14px 16px; border: 2px solid var(--zm-border); background: var(--zm-white); font-family: 'Inter', sans-serif; font-size: 1rem; color: var(--zm-black); appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23000' stroke-width='2' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; cursor: pointer; }
+        .form-select:focus { outline: none; border-color: var(--zm-orange); }
+        textarea.form-input { resize: vertical; min-height: 100px; }
+        .alert { display: none; padding: 16px; font-size: 0.9rem; margin-bottom: 20px; }
+        .alert-error { background: #fff0f0; border: 2px solid #e53e3e; color: #c53030; }
+        .success-msg { display: none; }
+        .stat-number { font-family: 'Space Grotesk', sans-serif; font-weight: 900; letter-spacing: -0.04em; line-height: 1; }
+        .testimonial-quote { font-family: 'Inter', sans-serif; font-style: normal; }
+        /* Mobile nav */
+        .mobile-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--zm-white); border-bottom: 1px solid var(--zm-border); padding: 12px 24px; flex-direction: column; gap: 6px; }
+        .mobile-nav.open { display: flex; }
+        .mobile-nav a { padding: 10px 0; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: #333; transition: 0.1s; }
+        .mobile-nav a:hover { color: var(--zm-orange); }
+        .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+        .hamburger span { display: block; width: 22px; height: 2px; background: var(--zm-blue); transition: 0.2s; }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        @media (max-width: 767px) { .hamburger { display: flex; } .desktop-nav { display: none !important; } }
     </style>
 </head>
 <body>
 
-    <header role="banner">
-        <div class="container">
-            <div class="logo-wrapper">
-                <div class="logo-text">Z&M SOLUTIONS</div>
-                <div class="logo-dot"></div>
+    <!-- Header -->
+    <header class="bg-white border-b border-black/[0.06] sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center relative">
+            <a href="#" class="flex items-center gap-3">
+                <div class="relative w-11 h-11 shrink-0">
+                    <div class="w-full h-full circle bg-[var(--zm-orange)]"></div>
+                    <div class="absolute inset-[3px] circle border border-white/30"></div>
+                </div>
+                <span class="font-black text-lg tracking-tight uppercase text-[var(--zm-blue)]">Z&amp;M Solutions</span>
+            </a>
+            <div class="desktop-nav flex gap-10 items-center">
+                <a href="#work" class="font-semibold text-sm uppercase tracking-wider text-gray-500 hover:text-[var(--zm-orange)] transition-colors">Our Work</a>
+                <a href="#testimonials" class="font-semibold text-sm uppercase tracking-wider text-gray-500 hover:text-[var(--zm-orange)] transition-colors">Testimonials</a>
+                <a href="#approach" class="font-semibold text-sm uppercase tracking-wider text-gray-500 hover:text-[var(--zm-orange)] transition-colors">Approach</a>
+                <a href="#contact" class="btn-primary text-xs px-5 py-3">Start a Conversation</a>
             </div>
-            <h1 class="hero-sub">High-utility AI strategy for growing teams. We design the systems that eliminate grunt work so your people can focus on what matters.</h1>
-        </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#work">Our Work</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#approach">Approach</a>
+                <a href="#contact" class="text-[var(--zm-orange)] font-bold">Start a Conversation</a>
+            </div>
+        </nav>
     </header>
 
-    <main class="container" role="main">
-        
-        <article>
-            <h2 class="section-title">THE APPROACH</h2>
-            <div class="accent-bar"></div>
-            <p style="font-size: 1.4rem; max-width: 850px; margin-bottom: 20px; font-weight: 500;">
-                Most businesses are drowning in manual tasks that "just need to get done." We design the blueprints to automate that friction away.
-            </p>
-            
-            <section class="script-box">
-                <div class="badge">OUR FOCUS</div>
-                <h3 style="margin-bottom:10px;">The Strategy, Not The Troubleshooting</h3>
-                <p style="font-size: 1.1rem; line-height: 1.6;">
-                    We don't live in your codebase or fix your printers. We analyze your workflows, find the holes, and design the exact AI logic to plug them. We provide the roadmap; your team handles the build. You get a better business; we stay focused on the next big win.
+    <!-- Hero -->
+    <section class="bg-[var(--zm-blue)] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 pt-28 pb-28 md:pb-36 relative z-10">
+            <div class="max-w-4xl">
+                <div class="flex items-center gap-3 mb-8">
+                    <span class="w-8 h-[2px] bg-[var(--zm-orange)]"></span>
+                    <span class="text-[var(--zm-orange)] text-xs font-bold uppercase tracking-[0.15em]">Systems Architecture</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black text-white mb-6 leading-[0.9]">
+                    Faster workflows for<br>
+                    <span class="text-[var(--zm-orange)]">professional teams.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-white/60 mb-10 max-w-xl leading-relaxed">
+                    Z&amp;M Solutions builds operational systems that make your team faster. We find the tasks that slow you down and deploy the right tool, system, or process to remove them.
                 </p>
-            </section>
-        </article>
-
-        <section>
-            <h2 class="section-title">REAL BUSINESS RESULTS</h2>
-            <div class="accent-bar"></div>
-            
-            <table class="utility-table" summary="Business problems and AI strategic solutions">
-                <thead>
-                    <tr>
-                        <th scope="col">Inefficiency</th>
-                        <th scope="col">The Strategic Fix</th>
-                        <th scope="col">Result</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Manual Reporting</strong></td>
-                        <td>Automated data collection and formatting engines.</td>
-                        <td style="color: var(--accent-red); font-weight: 700;">Zero Grunt Work</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Lead Response</strong></td>
-                        <td>Logic for instant, 24/7 lead qualification.</td>
-                        <td style="color: var(--accent-red); font-weight: 700;">No Missed Deals</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Content Output</strong></td>
-                        <td>Systems for brand-accurate, high-volume production.</td>
-                        <td style="color: var(--accent-red); font-weight: 700;">Faster Growth</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <h2 class="section-title">HOW WE HELP</h2>
-        <div class="accent-bar"></div>
-        
-        <section class="grid">
-            <article class="card">
-                <div>
-                    <div class="badge">01. THE DIAGNOSTIC</div>
-                    <h3>Workflow Audit</h3>
-                    <p>We find exactly where your team is wasting time on low-value tasks that AI could handle in seconds.</p>
-                    <ul class="service-list">
-                        <li>Process Mapping</li>
-                        <li>Bottleneck Search</li>
-                        <li>Estimated Time Savings</li>
-                    </ul>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="btn-primary text-base px-8 py-4">Start a Conversation</a>
+                    <a href="#work" class="btn-outline text-base px-8 py-4">See What We Build</a>
                 </div>
-            </article>
-            <article class="card">
-                <div>
-                    <div class="badge">02. THE BLUEPRINT</div>
-                    <h3>System Design</h3>
-                    <p>We design the prompt logic and workflow architecture. You get the documentation your team needs to build it.</p>
-                    <ul class="service-list">
-                        <li>Custom Prompt Logic</li>
-                        <li>Step-by-Step Roadmap</li>
-                        <li>Implementation Guide</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="card">
-                <div>
-                    <div class="badge">03. ADVISORY</div>
-                    <h3>Strategic Review</h3>
-                    <p>Occasional high-level check-ins to ensure your systems are actually working and scaling with you.</p>
-                    <ul class="service-list">
-                        <li>Design Verification</li>
-                        <li>System Stress-Testing</li>
-                        <li>Future Roadmap</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
+            </div>
+        </div>
+        <div class="h-2 bg-[var(--zm-orange)]"></div>
+    </section>
 
-        <!-- INTAKE FORM SECTION -->
-        <section id="audit-form" class="form-container">
-            <div class="badge red">INTAKE FORM</div>
-            <h2 class="section-title" style="margin-top: 10px;">REQUEST A DIAGNOSTIC</h2>
-            <div class="accent-bar"></div>
-            <p style="margin-bottom: 40px; font-size: 1.1rem; max-width: 600px;">
-                Complete this form to quantify your infrastructure gap. We will review your bottleneck and reach out if there is a clear ROI for automation.
+    <!-- Quote strip -->
+    <section class="bg-black py-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-white/70 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                "We hired Z&amp;M to solve a compliance reporting problem that had been consuming our team for months. They delivered a working system in two weeks. No meetings, no presentations — just a system that did the work."
             </p>
+            <p class="text-[var(--zm-orange)] text-xs font-bold uppercase tracking-[0.15em] mt-4">— COO, Defense Contractor</p>
+        </div>
+    </section>
 
-            <form action="https://formspree.io/f/xrebonon" method="POST" accept-charset="UTF-8">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="name" placeholder="John Doe" autocomplete="name" required>
+    <!-- What We Build -->
+    <section class="bg-white py-28">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-6">
+                <span class="w-8 h-[2px] bg-[var(--zm-orange)] mx-auto mb-6" style="display:block;"></span>
+                <h2 class="text-4xl md:text-5xl font-black text-[var(--zm-blue)]">What We Build</h2>
+                <p class="text-gray-500 mt-4 max-w-lg mx-auto">Three disciplines. One purpose: make your team faster.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-px bg-[var(--zm-border)] border border-[var(--zm-border)] mt-14">
+                <div class="bg-white p-10 md:p-12 hover:bg-[var(--zm-off-white)] transition-colors">
+                    <span class="stat-number text-5xl md:text-6xl text-[var(--zm-orange)] mb-4 block">01</span>
+                    <h3 class="text-xl font-black text-[var(--zm-blue)] mb-4">Intelligence Briefs</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">Automated briefs that filter and deliver only what matters. Regulatory changes relevant to your contracts. Strategic signals without the noise.</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="email">Work Email</label>
-                    <input type="email" id="email" name="email" placeholder="john@company.com" autocomplete="email" required>
+                <div class="bg-white p-10 md:p-12 hover:bg-[var(--zm-off-white)] transition-colors">
+                    <span class="stat-number text-5xl md:text-6xl text-[var(--zm-orange)] mb-4 block">02</span>
+                    <h3 class="text-xl font-black text-[var(--zm-blue)] mb-4">Automation Systems</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">Systems that handle repetitive tasks on schedule. Audit-ready compliance documentation produced automatically. Manual data work eliminated.</p>
+                </div>
+                <div class="bg-white p-10 md:p-12 hover:bg-[var(--zm-off-white)] transition-colors">
+                    <span class="stat-number text-5xl md:text-6xl text-[var(--zm-orange)] mb-4 block">03</span>
+                    <h3 class="text-xl font-black text-[var(--zm-blue)] mb-4">Workflow Tools</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">Tools that produce finished output from raw information. Complete documents from case notes. Systems that should already be working together — now connected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases / Results -->
+    <section id="work" class="bg-[var(--zm-off-white)] py-28">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-6">
+                <span class="w-8 h-[2px] bg-[var(--zm-orange)] mx-auto mb-6" style="display:block;"></span>
+                <h2 class="text-4xl md:text-5xl font-black text-[var(--zm-blue)]">Cases We've Solved</h2>
+                <p class="text-gray-500 mt-4 max-w-lg mx-auto">Five teams. Five different bottlenecks. Each one eliminated.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-14">
+                <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10 hover:border-[var(--zm-orange)] transition-colors">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-[0.12em] text-white bg-[var(--zm-orange)] px-3 py-1 inline-block mb-2">Intelligence Brief</span>
+                            <h3 class="text-2xl font-black text-[var(--zm-blue)] mt-3">Defense Contractor</h3>
+                        </div>
+                        <span class="stat-number text-5xl text-[var(--zm-orange)] shrink-0">40+</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm mb-3"><strong class="text-black">The bottleneck:</strong> Team reading hundreds of regulation pages each week to find contract-specific changes.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm"><strong class="text-black">What we built:</strong> Automated briefs that surface only the changes relevant to each subscriber.</p>
+                    <p class="text-[var(--zm-orange)] font-bold text-xs uppercase tracking-wider mt-4">Hours per week reclaimed</p>
                 </div>
 
-                <div class="form-group">
-                    <label for="company-size">Company / Team Size</label>
-                    <select id="company-size" name="company_size">
-                        <option value="solopreneur">Solopreneur</option>
-                        <option value="small">2-10 People</option>
-                        <option value="medium">11-50 People</option>
-                        <option value="large">50+ People</option>
-                    </select>
+                <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10 hover:border-[var(--zm-orange)] transition-colors">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-[0.12em] text-white bg-[var(--zm-orange)] px-3 py-1 inline-block mb-2">Intelligence Brief</span>
+                            <h3 class="text-2xl font-black text-[var(--zm-blue)] mt-3">SMB Leadership</h3>
+                        </div>
+                        <span class="stat-number text-5xl text-[var(--zm-orange)] shrink-0">50→2</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm mb-3"><strong class="text-black">The bottleneck:</strong> Monitoring dozens of daily AI and policy announcements to make strategic decisions.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm"><strong class="text-black">What we built:</strong> A strategic filter delivering only the 2-3 signals that matter each week.</p>
+                    <p class="text-[var(--zm-orange)] font-bold text-xs uppercase tracking-wider mt-4">Signal-to-noise compression</p>
                 </div>
 
-                <div class="form-group">
-                    <label for="bottleneck">Your Biggest Manual Bottleneck</label>
-                    <textarea id="bottleneck" name="message" rows="4" placeholder="Describe the one task that takes up the most time for your team..." required></textarea>
+                <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10 hover:border-[var(--zm-orange)] transition-colors">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-[0.12em] text-white bg-[var(--zm-orange)] px-3 py-1 inline-block mb-2">Automation System</span>
+                            <h3 class="text-2xl font-black text-[var(--zm-blue)] mt-3">School Administrators</h3>
+                        </div>
+                        <span class="stat-number text-5xl text-[var(--zm-orange)] shrink-0">6 wks→48 hrs</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm mb-3"><strong class="text-black">The bottleneck:</strong> Compiling compliance evidence under regulatory deadlines using manual processes.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm"><strong class="text-black">What we built:</strong> Automated compliance scoring and reporting producing audit-ready documentation on schedule.</p>
+                    <p class="text-[var(--zm-orange)] font-bold text-xs uppercase tracking-wider mt-4">Cycle time compression</p>
                 </div>
 
-                <!-- Hidden field to prevent spam (Honeypot) -->
-                <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+                <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10 hover:border-[var(--zm-orange)] transition-colors">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-[0.12em] text-white bg-[var(--zm-orange)] px-3 py-1 inline-block mb-2">Workflow Tool</span>
+                            <h3 class="text-2xl font-black text-[var(--zm-blue)] mt-3">Law Firm</h3>
+                        </div>
+                        <span class="stat-number text-5xl text-[var(--zm-orange)] shrink-0">~85%</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm mb-3"><strong class="text-black">The bottleneck:</strong> Drafting each legal document from scratch for every new case.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm"><strong class="text-black">What we built:</strong> Structured tools that generate finished documents from case-specific input.</p>
+                    <p class="text-[var(--zm-orange)] font-bold text-xs uppercase tracking-wider mt-4">First-draft reduction</p>
+                </div>
+            </div>
 
-                <button type="submit" class="btn" style="width: 100%; border: var(--border-thick);">Submit Diagnostic Request</button>
-            </form>
-        </section>
+            <!-- Case 5 full width -->
+            <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10 mt-6 hover:border-[var(--zm-orange)] transition-colors">
+                <div class="flex items-start justify-between mb-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-[0.12em] text-white bg-[var(--zm-orange)] px-3 py-1 inline-block mb-2">Automation System</span>
+                        <h3 class="text-2xl font-black text-[var(--zm-blue)] mt-3">Financial Advisory</h3>
+                    </div>
+                    <span class="stat-number text-5xl text-[var(--zm-orange)] shrink-0">3 days→20 min</span>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-gray-600 leading-relaxed text-sm mb-3"><strong class="text-black">The bottleneck:</strong> Compiling client compliance reports across 200+ accounts using spreadsheets and manual data entry.</p>
+                        <p class="text-gray-600 leading-relaxed text-sm"><strong class="text-black">What we built:</strong> Automated reporting system generating complete compliance packages from live data.</p>
+                    </div>
+                    <div>
+                        <p class="text-[var(--zm-orange)] font-bold text-xs uppercase tracking-wider mb-2">Cycle time compression</p>
+                        <p class="text-gray-600 leading-relaxed text-sm">What took three full days of manual work each month now completes in under 20 minutes. Reports are more accurate, consistent, and audit-ready.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- CTA Bridge -->
+    <section class="bg-white py-16 border-t border-b border-[var(--zm-border)]">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-black text-[var(--zm-blue)] mb-4">Ready to go faster?</h2>
+            <p class="text-gray-500 mb-8 leading-relaxed">Tell us what's slowing your team down. We'll review your workflow and deliver a specific proposal — not a sales pitch.</p>
+            <a href="#contact" class="btn-primary text-base px-8 py-4">Start a Conversation</a>
+        </div>
+    </section>
 
-    <footer role="contentinfo">
-        <div class="container">
-            <p style="margin-bottom: 10px; font-family:'Space Grotesk';">Z&M SOLUTIONS — STRATEGY & ARCHITECTURE</p>
-            <p style="opacity: 0.6; font-size: 0.7rem;">&copy; 2025 Z&M SOLUTIONS. ALL RIGHTS RESERVED. NO UNAUTHORIZED REPRODUCTION.</p>
+    <!-- Testimonials -->
+    <section id="testimonials" class="bg-[var(--zm-off-white)] py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-6">
+                <span class="w-8 h-[2px] bg-[var(--zm-orange)] mx-auto mb-6" style="display:block;"></span>
+                <h2 class="text-4xl md:text-5xl font-black text-[var(--zm-blue)]">What Clients Say</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mt-14">
+                <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10">
+                    <p class="text-gray-600 leading-relaxed text-sm mb-6 testimonial-quote">"We had a compliance reporting process consuming one of our senior people three days every month. Z&amp;M automated it in under two weeks. That person now works on actual contract work."</p>
+                    <div>
+                        <p class="font-bold text-sm text-[var(--zm-blue)]">Director of Compliance</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider">Mid-Market Defense Contractor</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10">
+                    <p class="text-gray-600 leading-relaxed text-sm mb-6 testimonial-quote">"I was drowning in AI newsletters and vendor pitches. Z&amp;M's briefs cut through everything and give me the 2-3 things I actually need to know each week. I've stopped reading anything else."</p>
+                    <div>
+                        <p class="font-bold text-sm text-[var(--zm-blue)]">CEO</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider">SMB Technology Services</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-[var(--zm-border)] p-8 md:p-10">
+                    <p class="text-gray-600 leading-relaxed text-sm mb-6 testimonial-quote">"No consultants, no discovery phases, no status meetings. They just looked at our workflow, identified the bottleneck, and deployed the fix. That's it. That's how it should work."</p>
+                    <div>
+                        <p class="font-bold text-sm text-[var(--zm-blue)]">Managing Partner</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider">Law Firm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="approach" class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-6">
+                <span class="w-8 h-[2px] bg-[var(--zm-orange)] mx-auto mb-6" style="display:block;"></span>
+                <h2 class="text-4xl md:text-5xl font-black text-[var(--zm-blue)]">Three Phases, One Outcome</h2>
+                <p class="text-gray-500 mt-4 max-w-lg mx-auto">Every engagement follows the same structure. The solution depends on the bottleneck.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mt-14">
+                <div class="bg-[var(--zm-off-white)] p-8 md:p-10 border border-[var(--zm-border)]">
+                    <span class="stat-number text-5xl md:text-6xl text-[var(--zm-orange)] mb-4 block">01</span>
+                    <h3 class="text-lg font-black text-[var(--zm-blue)] mb-3">Workflow Analysis</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">We observe the work as it is performed. No assumptions, no theory — just what actually happens.</p>
+                </div>
+                <div class="bg-[var(--zm-off-white)] p-8 md:p-10 border border-[var(--zm-border)]">
+                    <span class="stat-number text-5xl md:text-6xl text-[var(--zm-orange)] mb-4 block">02</span>
+                    <h3 class="text-lg font-black text-[var(--zm-blue)] mb-3">Bottleneck Isolation</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">We identify the exact step consuming time or resources. The real drag is rarely where it first appears.</p>
+                </div>
+                <div class="bg-[var(--zm-off-white)] p-8 md:p-10 border border-[var(--zm-border)]">
+                    <span class="stat-number text-5xl md:text-6xl text-[var(--zm-orange)] mb-4 block">03</span>
+                    <h3 class="text-lg font-black text-[var(--zm-blue)] mb-3">Resolution Deployment</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">We build and implement the specific tool or system that makes the team faster. No reports. No decks. A working system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-[var(--zm-blue)] py-28">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-5">
+                    <span class="w-8 h-[2px] bg-[var(--zm-orange)] mb-6" style="display:block;"></span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-6">Tell us what's slowing your team down.</h2>
+                    <p class="text-white/60 text-lg leading-relaxed mb-8">
+                        After reviewing your workflow, we'll deliver a specific proposal — not a sales pitch. No cost, no commitment.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3 items-start">
+                            <i class="fa-solid fa-check text-[var(--zm-orange)] mt-1 text-xs"></i>
+                            <span class="text-white/60 text-sm">Complimentary workflow review</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <i class="fa-solid fa-check text-[var(--zm-orange)] mt-1 text-xs"></i>
+                            <span class="text-white/60 text-sm">Honest assessment within 48 hours</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <i class="fa-solid fa-check text-[var(--zm-orange)] mt-1 text-xs"></i>
+                            <span class="text-white/60 text-sm">Specific proposal, not a pitch deck</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:col-span-6 md:col-start-7">
+                    <div class="bg-white p-8 md:p-10 shadow-2xl">
+                        <span class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6 block">Start Your Workflow Review</span>
+
+                        <div class="alert alert-error" id="alert-error"></div>
+
+                        <form id="audit-form" action="#contact" method="post">
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label for="first_name" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">First Name</label>
+                                    <input type="text" id="first_name" class="form-input" required placeholder="Jane">
+                                </div>
+                                <div>
+                                    <label for="last_name" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Last Name</label>
+                                    <input type="text" id="last_name" class="form-input" required placeholder="Doe">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Email</label>
+                                <input type="email" id="email" class="form-input" required placeholder="jane@company.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="company" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Company</label>
+                                <input type="text" id="company" class="form-input" required placeholder="Acme Defense">
+                            </div>
+                            <div class="mb-4">
+                                <label for="industry" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Industry</label>
+                                <select id="industry" class="form-select" required>
+                                    <option value="">Select</option>
+                                    <option value="defense">Defense Contractor</option>
+                                    <option value="smb">SMB / Leadership</option>
+                                    <option value="legal">Legal / Law Firm</option>
+                                    <option value="education">Education Administration</option>
+                                    <option value="healthcare">Healthcare</option>
+                                    <option value="financial">Financial Advisory</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="bottleneck" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">What's slowing your team down?</label>
+                                <textarea id="bottleneck" class="form-input" required placeholder="Tell us what's happening."></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label for="time_lost" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">Hours per week lost to this?</label>
+                                <select id="time_lost" class="form-select" required>
+                                    <option value="">Select</option>
+                                    <option value="1-5">1–5 hrs/wk</option>
+                                    <option value="5-15">5–15 hrs/wk</option>
+                                    <option value="15-30">15–30 hrs/wk</option>
+                                    <option value="30+">30+ hrs/wk</option>
+                                    <option value="unsure">Not sure</option>
+                                </select>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn-primary w-full text-center text-sm">Start Your Workflow Review</button>
+                        </form>
+
+                        <div class="success-msg text-center py-8" id="success-msg">
+                            <div class="w-16 h-16 circle bg-[var(--zm-orange)] flex items-center justify-center mx-auto mb-6">
+                                <i class="fa-solid fa-check text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-[var(--zm-blue)] mb-3">Thanks.</h3>
+                            <p class="text-gray-600 mb-2">We'll review your situation and respond within 48 hours.</p>
+                            <p class="text-gray-400 text-sm">If we can help, you'll get a specific proposal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="relative w-8 h-8">
+                    <div class="w-full h-full circle bg-[var(--zm-orange)]"></div>
+                    <div class="absolute inset-[2px] circle border border-white/30"></div>
+                </div>
+                <span class="font-black text-sm uppercase tracking-tight text-white">Z&amp;M Solutions LLC</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="text-xs text-gray-500 uppercase tracking-widest font-bold hover:text-white transition-colors">Privacy Policy</a>
+                <p class="text-xs text-gray-500 uppercase tracking-widest font-bold">© 2026 Z&amp;M SOLUTIONS</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Schema -->
+    <script type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "Organization", "@id": "https://www.zmsolutions.com/#organization", "name": "Z&M Solutions LLC", "url": "https://www.zmsolutions.com", "description": "Builds operational systems that make professional teams faster.", "slogan": "Faster workflows for professional teams.", "areaServed": "Global", "contactPoint": { "@type": "ContactPoint", "contactType": "new business" }, "makesOffer": { "@type": "Offer", "itemOffered": [ { "@type": "Service", "name": "Workflow Review", "description": "Complimentary assessment of your team's workflow to identify opportunities to go faster." }, { "@type": "Service", "name": "Intelligence Briefs", "description": "Automated briefs surfacing only the regulatory or market changes relevant to the subscriber." }, { "@type": "Service", "name": "Workflow Automation", "description": "Systems that eliminate repetitive manual tasks and produce output on schedule." } ] }, "audience": { "@type": "BusinessAudience", "audienceType": "Defense Contractors, SMB Leaders, School Administrators, Legal Professionals, Healthcare, Financial Advisory" } }
+    </script>
+    <script type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What does Z&M Solutions do?", "acceptedAnswer": { "@type": "Answer", "text": "Z&M Solutions builds operational systems that make professional teams faster. We find the tasks that slow teams down and deploy the right tool, system, or process to remove them." } }, { "@type": "Question", "name": "How is Z&M Solutions different from consultants or agencies?", "acceptedAnswer": { "@type": "Answer", "text": "Consultants deliver recommendations. We deliver the system that makes the team faster. There is no report or deck — there is a working resolution." } }, { "@type": "Question", "name": "What industries do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "Defense contractors, SMB leaders, school administrators, legal professionals, healthcare practices, and financial advisory firms — any professional team with work that should not need to be done manually." } } ] }
+    </script>
+    <script type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.zmsolutions.com/" }, { "@type": "ListItem", "position": 2, "name": "Our Work", "item": "https://www.zmsolutions.com/#work" }, { "@type": "ListItem", "position": 3, "name": "Approach", "item": "https://www.zmsolutions.com/#approach" }, { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://www.zmsolutions.com/#contact" } ] }
+    </script>
+
+    <script>
+    (function(){
+        'use strict';
+
+        // Mobile hamburger
+        var ham = document.getElementById('hamburger');
+        var nav = document.getElementById('mobileNav');
+        if (ham && nav) {
+            ham.addEventListener('click', function() {
+                ham.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+            nav.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    ham.classList.remove('open');
+                    nav.classList.remove('open');
+                });
+            });
+        }
+
+        // Form
+        var form = document.getElementById('audit-form');
+        var submitBtn = document.getElementById('submit-btn');
+        var alertError = document.getElementById('alert-error');
+        var successMsg = document.getElementById('success-msg');
+
+        // ============================================================
+        // SETUP: Paste your Google Apps Script Web App URL below
+        // ============================================================
+        var APPS_SCRIPT_URL = ''; // ← Paste URL here
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alertError.style.display = 'none';
+
+            var required = form.querySelectorAll('[required]');
+            for (var i = 0; i < required.length; i++) {
+                if (!required[i].value.trim()) {
+                    alertError.textContent = 'Please fill in all required fields.';
+                    alertError.style.display = 'block';
+                    required[i].focus();
+                    return;
+                }
+            }
+            var email = document.getElementById('email').value.trim();
+            if (!email.includes('@')) {
+                alertError.textContent = 'Please enter a valid email.';
+                alertError.style.display = 'block';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            var data = {
+                first_name: document.getElementById('first_name').value.trim(),
+                last_name: document.getElementById('last_name').value.trim(),
+                email: email,
+                company: document.getElementById('company').value.trim(),
+                industry: document.getElementById('industry').value,
+                bottleneck: document.getElementById('bottleneck').value.trim(),
+                time_lost: document.getElementById('time_lost').value,
+                submitted_at: new Date().toISOString()
+            };
+
+            // If Apps Script not configured, show success and log
+            if (!APPS_SCRIPT_URL) {
+                console.log('LEAD CAPTURED (no Google Sheet configured):', data);
+                form.style.display = 'none';
+                successMsg.style.display = 'block';
+                return;
+            }
+
+            // Send to Google Apps Script
+            fetch(APPS_SCRIPT_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(function(r) {
+                if (!r.ok) throw new Error('Server returned ' + r.status);
+                return r.json();
+            })
+            .then(function(r) {
+                if (r.success) {
+                    form.style.display = 'none';
+                    successMsg.style.display = 'block';
+                } else {
+                    throw new Error(r.error || 'Unknown error');
+                }
+            })
+            .catch(function(err) {
+                console.error('Form submission failed:', err);
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Start Your Workflow Review';
+                alertError.textContent = 'Something went wrong. Please try again or email us directly.';
+                alertError.style.display = 'block';
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
