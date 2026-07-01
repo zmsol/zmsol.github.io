@@ -44,7 +44,15 @@
             height: 28px;
             background: var(--blood-orange);
             flex-shrink: 0;
+            position: relative;
         }
+        .brand-bar .sphere-inner {
+            position: absolute;
+            inset: 3px;
+            border: 1.5px solid rgba(255,255,255,0.25);
+        }
+
+        .sphere, .sphere-inner { border-radius: 50%; }
         .brand-bar .brand-name {
             font-size: 0.85rem;
             font-weight: 900;
@@ -193,7 +201,7 @@
 </head>
 <body>
     <div class="brand-bar">
-        <div class="sphere"></div>
+        <div class="sphere"><div class="sphere-inner"></div></div>
         <span class="brand-name">Z&amp;M Solutions</span>
         <span class="brand-divider"></span>
         <span class="brand-tag">Operational Technology</span>
