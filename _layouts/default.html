@@ -23,13 +23,12 @@
             --deep-charcoal: #1E293B;
             --white: #FFFFFF;
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
             line-height: 1.7;
             color: var(--deep-charcoal);
             background: var(--cool-surface);
-            padding: 0;
         }
         /* Brand header bar */
         .brand-bar {
@@ -39,33 +38,19 @@
             align-items: center;
             gap: 0.75rem;
         }
-        .brand-bar .sphere {
-            width: 28px;
-            height: 28px;
-            background: var(--blood-orange);
-            flex-shrink: 0;
-            position: relative;
-        }
-        .brand-bar .sphere-inner {
-            position: absolute;
-            inset: 3px;
-            border: 1.5px solid rgba(255,255,255,0.25);
-        }
-
-        .sphere, .sphere-inner { border-radius: 50%; }
-        .brand-bar .brand-name {
+        .brand-name {
             font-size: 0.85rem;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 0.04em;
             color: var(--white);
         }
-        .brand-bar .brand-divider {
+        .brand-divider {
             width: 2px;
             height: 18px;
             background: rgba(255,255,255,0.15);
         }
-        .brand-bar .brand-tag {
+        .brand-tag {
             font-size: 0.7rem;
             font-weight: 600;
             text-transform: uppercase;
@@ -73,19 +58,14 @@
             color: rgba(255,255,255,0.5);
         }
         /* Orange accent strip */
-        .accent-strip {
-            height: 4px;
-            background: var(--blood-orange);
-        }
+        .accent-strip { height: 4px; background: var(--blood-orange); }
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: var(--white);
             padding: 2.5rem 2rem;
         }
-        @media (max-width: 600px) {
-            .container { padding: 1.5rem; }
-        }
+        @media (max-width: 600px) { .container { padding: 1.5rem; } }
         .back-link {
             display: inline-block;
             margin-bottom: 1.5rem;
@@ -180,16 +160,12 @@
             letter-spacing: 0.05em;
         }
         footer a { color: var(--blood-orange); font-weight: 600; }
-        /* TOC page styling */
         .doc-list { list-style: none; margin: 1.5rem 0; }
         .doc-list li {
             padding: 1rem 0;
             border-bottom: 1px solid var(--cool-surface);
         }
-        .doc-list li a {
-            font-weight: 700;
-            font-size: 1.05rem;
-        }
+        .doc-list li a { font-weight: 700; font-size: 1.05rem; }
         .doc-list li .desc {
             display: block;
             font-weight: 400;
@@ -201,8 +177,10 @@
 </head>
 <body>
     <div class="brand-bar">
-        <div class="sphere"><div class="sphere-inner"></div></div>
-        <span class="brand-name">Z&amp;M Solutions</span>
+        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="#AC1D00"/>
+        </svg>
+        <span class="brand-name">Z&amp;M SOLUTIONS</span>
         <span class="brand-divider"></span>
         <span class="brand-tag">Operational Technology</span>
     </div>
@@ -211,7 +189,7 @@
         <a class="back-link" href="{{ '/' | relative_url }}">← Home</a>
         {{ content }}
         <footer>
-            <p>Z&amp;M Solutions LLC — <a href="{{ '/' | relative_url }}">zmsol.github.io</a></p>
+            <p>Z&amp;M SOLUTIONS LLC — <a href="{{ '/' | relative_url }}">ZMSOL.GITHUB.IO</a></p>
         </footer>
     </div>
 </body>
