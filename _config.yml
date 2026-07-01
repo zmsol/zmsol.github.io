@@ -1,0 +1,36 @@
+# Z&M Solutions — GitHub Pages Jekyll Configuration
+# Enables proper HTML rendering of Markdown docs via GitHub Pages
+
+title: "Z&M Solutions"
+description: "Faster Workflows for Professional Teams"
+url: "https://zmsol.github.io"
+baseurl: ""
+
+# Markdown rendering
+markdown: kramdown
+highlighter: rouge
+
+# Jekyll 3.x default
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+
+# Permalinks (clean URLs)
+permalink: pretty
+
+# Exclude these from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Default front-matter for all files — ensures markdown in /docs/ gets rendered
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: default
